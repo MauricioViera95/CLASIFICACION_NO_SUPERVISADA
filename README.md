@@ -1,6 +1,33 @@
 # Clasificacion_no_supervisada
 Este repositorio implementa un flujo de clasificación no supervisada sobre ortofotos de alta resolución, utilizando algoritmos de clustering como KMeans, Gaussian Mixture Models (GMM) y un enfoque híbrido SLIC + GMM. El objetivo es segmentar superficies urbanas a partir de ortofotos y comparar el desempeño de los diferentes modelos.
 
+📂 Datos
+El proyecto utiliza una estructura estándar de directorios para organizar insumos y datos procesados:
+
+INSUMOS/   # Archivos de entrada (ortofotos, vectores, etc.)
+
+DATA/      # Datos procesados y salidas de modelos
+
+🔗 Opción 1: Datos ya organizados en Google Drive
+
+Puedes acceder directamente a la estructura completa (INSUMOS y DATA) en el siguiente enlace:
+
+👉 https://drive.google.com/drive/folders/1bAoQoRNwwrQ80NHqpTCJstQLO003U4NS
+
+
+🔗 Opción 2: Descarga desde fuentes oficiales
+
+Si prefieres armar la estructura desde cero:
+
+* Ortofotos PNOA → disponibles en la web oficial del Instituto Geográfico Nacional:
+
+      https://pnoa.ign.es/pnoa-imagen/productos-a-descarga
+
+* Datos de cobertura del suelo SIOSE → descargables desde el Centro de Descargas del CNIG:
+
+      https://centrodedescargas.cnig.es/CentroDescargas/siose
+
+  
 📂 Estructura de Archivos
 
 * main.py → Script principal. Coordina lectura de raster, reducción con PCA y ejecución de modelos (KMeans, GMM, SLIC+GMM).
